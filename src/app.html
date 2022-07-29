@@ -1,0 +1,23 @@
+<template>
+	<h1> Tabela Xpto </h1>
+	<lightning-button variant="brand" label="Brand" title="Primary action" onclick={handleClick}
+		class="slds-m-left_x-small"></lightning-button>
+
+
+	<!-- lightning-datatable > Tabela -->
+	<!-- data > Variavel que recebe os dados que vao mostrar na tabela -->
+	<!-- columns > Colunas que aparecem na tabela -->
+	<!-- lightning-card  >> fundo branco -->
+	<lightning-card title="HelloForEach" icon-name="custom:custom14">
+		<!-- unordered list > Listinha sem ordem -->
+		<ul class="slds-m-around_medium">
+			<!-- for:each > PARA CADA -->
+			<template for:each={listinha} for:item="conta">
+				<!-- key > Chave > Indice -->
+				<li key={conta.Id}>
+					{conta.Name}, {conta.Phone} - {conta.Website}
+				</li>
+			</template>
+		</ul>
+	</lightning-card>
+</template>

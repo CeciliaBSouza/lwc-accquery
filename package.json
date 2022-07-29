@@ -1,0 +1,7 @@
+{
+  "name": "@wcd/ceciliabsouza.lwc-l65p35qq-fork-l65s9aou",
+  "version": "0.0.0",
+  "scripts": {
+    "serve": "npx wcd-cli@latest serve e9sWRNHLioAw6hFaAq7l --open"
+  }
+}
